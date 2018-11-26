@@ -1,0 +1,49 @@
+/* Style all around */
+* {
+  align-content: center;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Title class style */
+.title {
+  background-image: url(./images/the-flatiron-building.png);
+  color: white;
+}
+
+/* Titles */
+h1, h3, h5 {
+  font-weight: bold;
+}
+
+/* Main Title */
+h1 {
+  font-size: 70px;
+}
+
+/* Navigation */
+nav, a {
+  font-size: 18px;
+  color: white;
+}
+
+/* Process Section */
+h3 {
+  font-size: 32px
+}
+
+/* Descriptor section */
+h5 {
+  font-size: 23px;
+}
+
+span {
+  font-size: 14px
+}
+
+/* Footer */
+footer {
+  font-size: 11px;
+  background-color: dimgray;
+  text-align: left;
+}
