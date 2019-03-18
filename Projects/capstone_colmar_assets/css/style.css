@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 1.4;
 }
@@ -17,7 +17,7 @@ html {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .texts{
@@ -26,13 +26,22 @@ html {
 
 .texts h1{
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 900;
+  color: #383838;
+}
+
+
+.texts h3 {
+  font-size: 2em;
+  font-weight: 900;
+  color: #383838;
 }
 
 .texts p{
   font-size: 1.5em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #383838;
 }
 
 .primary{
@@ -50,9 +59,8 @@ html {
   font-size: 1rem;
 }
 
-.texts h3 {
-  font-size: 2em;
-  font-weight: bold;
+nav li a, nav li, .copyright span{
+  color: #383838;
 }
 
 /* Header */
@@ -61,10 +69,14 @@ header,footer {
   width: 100%;
   /* background-color: white; */
   /* z-index: 1; */
-  color: rgb(128,128,128);
+  color: #3D3D3D;
   font-size: 1rem;
   height: 4rem;
   padding-left: .5rem;
+}
+
+header .light{
+  color:#ADADAD;
 }
 
 .top, .bot {
@@ -83,8 +95,8 @@ header .mobile {
   display: none;
 }
 
-/* @media only screen and (max-width: 760px) {
-  header .desktop {
+@media only screen and (max-width: 760px) {
+  header .desktop {  /* how come just .desktop doesn't work?*/
     display: none;
   }
 
@@ -93,32 +105,17 @@ header .mobile {
     width: 100%;
   }
 
-  header .content {
-    padding: .5rem 0;
-  }
-
   header .mobile ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
-
-  header .mobile li {
-    padding: 0;
-  }
-
-  header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
-  }
-} */
+}
 
 /* Main Banner */
 .banner {
-  background-color: rgb(192,192,192);
+  background-color: #D3D3D3;
 }
 
 .banner .texts{
@@ -126,24 +123,29 @@ header .mobile {
   padding: 1rem;
 }
 
-.banner .texts h1{
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 .banner .texts p{
-  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
+.banner .texts h1{
+  font-size: 3rem;
+}
 .banner .button{
-  background-color: rgb(128,128,128);
-  color: white;
+  background-color: #565656;
   text-align: center;
+  transition: background-color .5s linear;
 }
 
-.banner .button p{
+.banner .button:hover{
+  background-color: #67C5AF;
+}
+
+.banner .texts .button p{
   font-size: 1rem;
-  padding: .5rem auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
 }
 
 .banner .secondary .flex{
@@ -151,11 +153,28 @@ header .mobile {
   align-items: stretch;
 }
 
+@media only screen and (max-width: 760px) {
+  .banner .content{
+    display: block;
+  }
+  .banner .primary, .banner .secondary{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+  .banner img{
+    width: 100%;
+  }
+  .banner .texts{
+    margin: auto;
+  }
+}
 /* Main Articles why is my right photos not aligning with left photo? */
 
 .articles .primary{
   font-size: .7rem;
-  border-right: 1px solid rgb(128,128,128);
+  border-right: 1px solid #EFEFEF;
 }
 
 .articles .primary .texts{
@@ -190,6 +209,11 @@ header .mobile {
 .info{
   width: 100%;
   /* margin: 1px auto; */
+  transition: background-color .5s ease-out;
+}
+
+.info:hover{
+  background-color: #D3D3D3;
 }
 
 .info .texts{
@@ -198,21 +222,70 @@ header .mobile {
   padding: 0;
 }
 
+.articles .info .texts p:last-child{
+  padding-top: 0;
+}
+
+.info .texts a{
+  color: blue;
+  transition: color .2s linear;
+}
+
+.info .texts a:hover{
+  color: #67C5AF;
+}
+
 #campus{
-  border-top: 1px solid rgb(128,128,128);
-  border-bottom: 1px solid rgb(128,128,128);
+  border-top: 1px solid #EFEFEF;
+  border-bottom: 1px solid #EFEFEF;
   padding-top: 1px;
   padding-bottom: 1px;
 }
 
-#guest_lecture{
-  background-color: rgb(192,192,192);
+/* #guest_lecture{
+
+} */
+
+.articles .mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .articles .desktop{
+    display: none;
+  }
+  .articles .primary{
+    border-right: 0px;
+  }
+  .articles .secondary{
+    margin: auto;
+    padding: 0 1rem;
+  }
+  .articles img.mobile{
+    display: flex;
+    width: 100%;
+  }
+  .articles .info{
+    flex-direction: column;
+    border: 0;
+  }
+  .articles .info .texts{
+    width: 100%;
+    padding-left: 1rem;
+  }
+  #guest_lecture{
+    padding-bottom: 2rem;
+  }
+  #campus{
+    border-top: 0px;
+    border-bottom: 0px;
+  }
 }
 
 /* Start Learning Section */
 
 .start_learning {
-  background-color: rgb(192,192,192);
+  background-color: #EFEFEF;
 }
 
 .start_learning .content{
@@ -222,10 +295,11 @@ header .mobile {
 }
 
 .heading h1{
-  font-weight: bold;
+  font-weight: 900;
   font-size: 2rem;
   padding-top: 2rem;
   text-align: center;
+  color: #383838;
 }
 
 .courses {
@@ -255,7 +329,7 @@ header .mobile {
 .course .texts p{
   padding: 0;
   font-size: 1.5em;
-  color:rgb(192,192,192);
+  color:#ADADAD;
 }
 
 .course .texts .middle{
@@ -263,10 +337,40 @@ header .mobile {
   padding-bottom: .5rem;
 }
 
+.start_learning .courses-m.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .start_learning .courses.desktop{
+    display: none;
+  }
+
+  .start_learning{
+    background-color: white;
+  }
+  .start_learning .courses-m.mobile{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+  }
+  .start_learning .courses-m.mobile a{
+    background-color: #D3D3D3;
+    padding: 1rem 1rem;
+    margin: .25rem 1rem;
+    transition: background-color .5s ease-out, color .5s ease-out;
+  }
+  .start_learning .courses-m.mobile a:hover{
+    background-color: #383838;
+    color: white;
+  }
+}
+
 /* Thesis Exhibit */
 .thesis_exhibit{
   font-size: .6rem;
 }
+
 /* .thesis_exhibit h1{
   font-weight: bold;
   font-size: 2rem;
@@ -278,7 +382,36 @@ video{
   padding-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 760px) {
+  .thesis_exhibit .primary .texts, .thesis_exhibit .secondary.desktop{
+    display: none;
+  }
+  .thesis_exhibit .primary, .thesis_exhibit .primary video{
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+}
+
 /* footer */
 footer{
-  border-top: 1px solid rgb(128,128,128);
+  border-top: 1px solid #EFEFEF;
+  color: #383838;
+}
+
+@media only screen and (max-width: 760px) {
+  footer{
+    border-top: 0px;
+  }
+  .bot .desktop{
+    display: none;
+  }
+  .copyright {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content{
+    border-bottom: 1px solid #EFEFEF;
+  }
 }

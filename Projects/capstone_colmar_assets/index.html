@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&amp;subset=latin-ext" rel="stylesheet">
     <title>Colmar Academy</title>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="flex top">
-        <div class="icon flex">
-          <img src="./images/ic-logo.svg" alt="Colmar Academy Logo">
+        <div class="icon flex desktop">
+          <img src="./images/ic-logo.svg" alt="Logo">
           <!-- <p><strong>COLMAR</strong> ACADEMY</p> -->
           <span class="bold">COLMAR</span>
-          <span>ACADEMY</span>
+          <span class="light">ACADEMY</span>
         </div>
         <!-- Desktop Nav -->
         <nav class="desktop">
@@ -25,14 +26,14 @@
             <li><a href="#">Sign In</a> </li>
           </ul>
         </nav>
-        <!-- <nav class="mobile">
+        <nav class="mobile">
           <ul>
-            <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-product-detail.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-about-us.svg"></a></li>
-            <li><a href="#" class="button">Join us</a></li>
+            <li><a href="#"><img src="./images/ic-logo.svg" alt="Logo"> </a> </li>
+            <li><a href="#"><img src="./images/ic-on-campus.svg" alt="campus"></a></li>
+            <li><a href="#"><img src="./images/ic-online.svg" alt="online"></a></li>
+            <li><a href="#"><img src="./images/ic-login.svg" alt="login"></a></li>
           </ul>
-        </nav> -->
+        </nav>
       </div>
     </header>
 
@@ -57,7 +58,7 @@
     <!-- Main Articles -->
     <div class="articles">
       <div class="content flex">
-        <div class="primary">
+        <div class="primary desktop">
           <img src="./images/information-main.jpg" alt="Students Studying">
           <div class="texts">
             <h1>It doesn't hurt to keep practicing</h1>
@@ -67,27 +68,30 @@
         </div>
         <div class="secondary information flex">
           <div class="info flex" id="orientation">
-            <img src="./images/information-orientation.jpg" alt="Students Studying">
+            <img class="desktop" src="./images/information-orientation.jpg" alt="Orientation">
+            <img class="mobile" src="./images/information-orientation-mobile.jpg" alt="Orientation">
             <div class="texts">
               <h3>Orientation date</h3>
               <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <a href="#">Read more</a>
+              <p><a href="#">Read more</a></p>
             </div>
           </div>
           <div class="info flex" id="campus">
-            <img src="./images/information-campus.jpg" alt="Students Studying">
+            <img class="desktop" src="./images/information-campus.jpg" alt="Map">
+            <img class="mobile" src="./images/information-campus-mobile.jpg" alt="Map">
             <div class="texts">
               <h3>Our campus</h3>
               <p>Find which campus is close by you</p>
-              <a href="#">Read more</a>
+              <p><a href="#">Read more</a></p>
             </div>
           </div>
           <div class="info flex" id="guest_lecture">
-            <img src="./images/information-guest-lecture.jpg" alt="Students Studying">
+            <img class="desktop" src="./images/information-guest-lecture.jpg" alt="guest">
+            <img class="mobile" src="./images/information-guest-lecture-mobile.jpg" alt="guest">
             <div class="texts">
               <h3>Our guest lecture</h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-              <a href="#">Read more</a>
+              <p><a href="#">Read more</a></p>
             </div>
           </div>
         </div>
@@ -100,7 +104,7 @@
         <div class="heading">
           <h1>Start Learning</h1>
         </div>
-        <div class="courses flex">
+        <div class="courses flex desktop">
           <div class="course">
             <img src="./images/course-software.jpg" alt="Computers">
             <div class="texts">
@@ -151,6 +155,14 @@
           </div>
 
         </div>
+        <div class="courses-m mobile">
+          <a href="#">Software Engineering</a>
+          <a href="#">Computer Art</a>
+          <a href="#">Design</a>
+          <a href="#">Data</a>
+          <a href="#">Business</a>
+          <a href="#">Marketing</a>
+        </div>
       </div>
     </div>
 
@@ -168,7 +180,7 @@
             <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           </div>
         </div>
-        <div class="secondary information flex">
+        <div class="secondary desktop information flex">
           <div class="info flex" id="fisma">
             <img src="./images/thesis-fisma.jpg" alt="iPhone and markers">
             <div class="texts">
@@ -195,8 +207,8 @@
         </div>
         <nav>
           <ul class="desktop">
-            <li>Terms</li>
-            <li>Privacy</li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a> </li>
           </ul>
         </nav>
       </div>
