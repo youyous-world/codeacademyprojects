@@ -1,0 +1,247 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.content {
+  max-width: 1600px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.texts{
+  text-align: left;
+}
+
+.texts h1{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.texts p{
+  font-size: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.primary{
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.primary img{
+  width: 100%;
+}
+
+.secondary {
+  width: 440px;
+  margin: auto;
+  font-size: 1rem;
+}
+
+/* Header */
+header {
+  /* position: fixed; */
+  width: 100%;
+  background-color: white;
+  /* z-index: 1; */
+  color: rgb(128,128,128);
+  font-size: 1rem;
+  height: 4rem;
+  padding-left: .5rem;
+}
+
+.top {
+  padding: 1rem .5rem;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-right: 1rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+/* @media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+} */
+
+/* Main Banner */
+.banner {
+  background-color: rgb(192,192,192);
+}
+
+/* .banner .motto .texts{
+  padding: auto 25% auto 0;
+} */
+
+.motto .button{
+  background-color: rgb(128,128,128);
+  color: white;
+  text-align: center;
+}
+
+.motto .button p{
+  font-size: 1rem;
+  padding: .5rem auto;
+}
+
+.banner .motto .flex{
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Main Articles why is my right photos not aligning with left photo? */
+
+.articles .primary{
+  font-size: .7rem;
+  border-right: 1px solid rgb(128,128,128);
+}
+
+.articles .signature{
+  font-size: 1em;
+  padding-bottom: 0.5rem;
+}
+
+.articles .primary .texts{
+  padding-top: 2rem;
+}
+
+.information{
+  width: 440px;
+  padding: 1rem 0 2rem 0;
+  margin: 0 auto auto 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info{
+  width: 100%;
+  /* margin: 1px auto; */
+}
+
+.information img{
+  width: 35%;
+  padding: 1rem;
+}
+
+.info .texts{
+  width: 65%;
+  font-size: .5rem;
+  padding: 0;
+}
+
+#campus{
+  border-top: 1px solid rgb(128,128,128);
+  border-bottom: 1px solid rgb(128,128,128);
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+#guest_lecture{
+  background-color: rgb(192,192,192);
+}
+
+/* Start Learning Section */
+
+.start_learning {
+  background-color: rgb(192,192,192);
+}
+
+.start_learning .content{
+  max-width: 1000px;
+  justify-content: center;
+  margin: auto;
+}
+
+.start_learning h1{
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.courses {
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 85%;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+
+}
+
+.course {
+  width: 32%;
+  height: 17rem;
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
+
+.course img{
+  width: 100%;
+}
+
+.course .texts{
+  padding: 1rem 1.5rem 1rem;
+}
+
+.course .texts p{
+  padding: 0;
+  font-size: .6em;
+  color:rgb(192,192,192);
+}
+
+.course .texts h3 {
+  font-size: .7em;
+  font-weight: bold;
+}
+
+.course .texts .middle{
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+}
