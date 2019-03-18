@@ -50,11 +50,16 @@ html {
   font-size: 1rem;
 }
 
+.texts h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 /* Header */
-header {
+header,footer {
   /* position: fixed; */
   width: 100%;
-  background-color: white;
+  /* background-color: white; */
   /* z-index: 1; */
   color: rgb(128,128,128);
   font-size: 1rem;
@@ -62,11 +67,11 @@ header {
   padding-left: .5rem;
 }
 
-.top {
+.top, .bot {
   padding: 1rem .5rem;
 }
 
-header nav ul {
+nav ul {
   display: flex;
 }
 
@@ -116,22 +121,32 @@ header .mobile {
   background-color: rgb(192,192,192);
 }
 
-/* .banner .motto .texts{
-  padding: auto 25% auto 0;
-} */
+.banner .texts{
+  width: 80%;
+  padding: 1rem;
+}
 
-.motto .button{
+.banner .texts h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner .texts p{
+  font-size: 1.5rem;
+}
+
+.banner .button{
   background-color: rgb(128,128,128);
   color: white;
   text-align: center;
 }
 
-.motto .button p{
+.banner .button p{
   font-size: 1rem;
   padding: .5rem auto;
 }
 
-.banner .motto .flex{
+.banner .secondary .flex{
   flex-direction: column;
   align-items: stretch;
 }
@@ -143,26 +158,28 @@ header .mobile {
   border-right: 1px solid rgb(128,128,128);
 }
 
-.articles .signature{
-  font-size: 1em;
-  padding-bottom: 0.5rem;
-}
-
 .articles .primary .texts{
   padding-top: 2rem;
 }
 
+.articles .primary .texts h1{
+  font-size: 1.5rem;
+}
+
+.articles .primary .texts p{
+  font-size: 1rem;
+}
+
+.articles .primary p.signature{
+  font-size: .5rem;
+  padding-bottom: 0.5rem;
+}
+
 .information{
-  width: 440px;
   padding: 1rem 0 2rem 0;
   margin: 0 auto auto 0;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.info{
-  width: 100%;
-  /* margin: 1px auto; */
 }
 
 .information img{
@@ -170,9 +187,14 @@ header .mobile {
   padding: 1rem;
 }
 
+.info{
+  width: 100%;
+  /* margin: 1px auto; */
+}
+
 .info .texts{
   width: 65%;
-  font-size: .5rem;
+  font-size: .6rem;
   padding: 0;
 }
 
@@ -199,7 +221,7 @@ header .mobile {
   margin: auto;
 }
 
-.start_learning h1{
+.heading h1{
   font-weight: bold;
   font-size: 2rem;
   padding-top: 2rem;
@@ -210,9 +232,9 @@ header .mobile {
   flex-wrap: wrap;
   flex-direction: row;
   width: 85%;
-  margin: 2rem auto;
-  font-size: 1.5rem;
-
+  margin: 2rem auto 0;
+  padding-bottom: 1rem;
+  font-size: .6rem;
 }
 
 .course {
@@ -232,16 +254,31 @@ header .mobile {
 
 .course .texts p{
   padding: 0;
-  font-size: .6em;
+  font-size: 1.5em;
   color:rgb(192,192,192);
-}
-
-.course .texts h3 {
-  font-size: .7em;
-  font-weight: bold;
 }
 
 .course .texts .middle{
   padding-top: 1.5rem;
   padding-bottom: .5rem;
+}
+
+/* Thesis Exhibit */
+.thesis_exhibit{
+  font-size: .6rem;
+}
+/* .thesis_exhibit h1{
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+} */
+video{
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+/* footer */
+footer{
+  border-top: 1px solid rgb(128,128,128);
 }
